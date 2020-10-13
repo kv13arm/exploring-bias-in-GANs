@@ -18,7 +18,7 @@ By controlling with a classifier the amount of a desired (target) feature to out
 
 *Note that not all biases are as obvious as the ones presented below.*
 
-When controlling the amount of 'female-ness'[1](#fn-1){:.fnref #fnref-1}, the figure below shows how much the other features change, as detected in those images by the classifier. 
+When controlling the amount of 'female-ness'[^bignote], the figure below shows how much the other features change, as detected in those images by the classifier. 
 
 ![Feature correlation graph](https://raw.githubusercontent.com/k13var/exploring-bias-in-GANs/main/img/female-ness_bias.png)
 
@@ -62,6 +62,8 @@ Streamlit
 pytorch | numpy | matplotlib 
 
 #### Ressources
+[DeepLearning.AI Generative Adversarial Networks (GANs) Specialization](https://www.deeplearning.ai/generative-adversarial-networks-specialization/)
+[DCGAN TUTORIAL!](https://pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html)
 
 
-[1](#fnref-1){:#fn-1}. The CelebA does not have a 'Female' feature but it has a 'Male' one. By reversing the label values in the 'Male' feature we were able to control feature selection based on a 'Female' feature thus created.
+[^bignote]: The CelebA does not have a 'Female' feature but it has a 'Male' one. By reversing the label values in the 'Male' feature we were able to control feature selection based on a 'Female' feature thus created.
