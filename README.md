@@ -1,7 +1,7 @@
 # Exploring bias in GANs
 
 ## Project overview
-Streamlit app to oncover feature entanglement in the ![CelebA](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) dataset and confirm inherent bias.
+Streamlit app to oncover feature entanglement in the [CelebA](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) dataset and confirm inherent bias.
 
 ## Generative Adversarial Networks
 Generative Adversarial Networks or GANs are machine learning architectures where two deep neaural networks compete with each other to create realistic outputs. GANs achieve this level of realism by pairing a generator, which learns to produce the target output, with a discriminator, which learns to distinguish true data from the output of the generator. The generator tries to fool the discriminator, and the discriminator tries to keep from being fooled.
@@ -18,7 +18,7 @@ By controlling with a classifier the amount of a desired (target) feature to out
 
 *Note that not all biases are as obvious as the ones presented below.*
 
-When controlling the amount of 'female-ness'[^1], the figure below shows how much the other features change, as detected in those images by the classifier. 
+When controlling the amount of 'female-ness'[1](#fn-1){:.fnref #fnref-1}, the figure below shows how much the other features change, as detected in those images by the classifier. 
 
 ![Feature correlation graph](https://raw.githubusercontent.com/k13var/exploring-bias-in-GANs/main/img/female-ness_bias.png)
 
@@ -64,4 +64,4 @@ pytorch | numpy | matplotlib
 #### Ressources
 
 
-[^1]: The CelebA does not have a 'Female' feature but it has a 'Male' one. By reversing the label values in the 'Male' feature we were able to control feature selection based on a 'Female' feature thus created.
+[1](#fnref-1){:#fn-1}. The CelebA does not have a 'Female' feature but it has a 'Male' one. By reversing the label values in the 'Male' feature we were able to control feature selection based on a 'Female' feature thus created.
